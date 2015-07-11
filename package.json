@@ -2,7 +2,6 @@
   "name": "deref-cli",
   "version": "1.0.0",
   "description": "Command-line interface to deref.link - trace URL redirects to their final destination.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
