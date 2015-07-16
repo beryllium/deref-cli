@@ -1,19 +1,20 @@
 #!/usr/bin/env node
-var chalk = require('chalk');
-var request = require('request');
-var opts = require('nomnom').parse();
-var arg = opts[0];
+var chalk   = require('chalk'),
+    request = require('request'),
+    opts    = require('nomnom').parse(),
+    arg     = opts[0];
 
+// We need to have a URL to deref, so let's show the usage info and quit
 if (!arg) {
-    console.log('Usage: ' + chalk.yellow('deref http://t.co/something'));
+    console.log('Usage: ' + chalk.yellow('deref "http://t.co/something"'));
     process.exit(1);
 }
 
 var derefQuery = {
     method: 'POST',
-    uri: 'http://deref.link/deref', 
-    body: {"url": arg},
-    json: true
+    uri:    'http://deref.link/deref', 
+    body:   {"url": arg},
+    json:   true
 };
 
 var handleResponse = function (error, response, body) {
