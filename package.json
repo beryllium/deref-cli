@@ -1,6 +1,6 @@
 {
   "name": "deref-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command-line interface to deref.link - trace URL redirects to their final destination.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,10 @@
   "bugs": {
     "url": "https://github.com/beryllium/deref-cli/issues"
   },
-  "keywords": ["cli", "command line"],
+  "keywords": [
+    "cli",
+    "command line"
+  ],
   "bin": {
     "deref": "index.js"
   }
