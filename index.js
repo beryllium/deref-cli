@@ -12,7 +12,7 @@ if (!arg) {
 
 var derefQuery = {
     method: 'POST',
-    uri:    'http://deref.link/deref', 
+    uri:    'https://deref.link/deref', 
     body:   {"url": arg},
     json:   true
 };
